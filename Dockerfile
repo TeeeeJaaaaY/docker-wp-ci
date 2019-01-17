@@ -16,8 +16,8 @@ RUN apt-get update
 RUN apt-get install build-essential libgmp-dev unzip rsync php7.0 php7.0-curl composer nodejs ruby-dev git yarn -yq
 
 # Set git configuration
-git config --global user.name "Forge CI/CD Deployment"
-git config --global user.email "deployments@forge.uk"
+RUN git config --global user.name "Forge CI/CD Deployment"
+RUN git config --global user.email "deployments@forge.uk"
 
 # Install WP Cli
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
