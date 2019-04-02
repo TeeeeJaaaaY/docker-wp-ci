@@ -13,7 +13,7 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
 # Install apt-get packages
 RUN apt-get update
-RUN apt-get install build-essential libgmp-dev unzip rsync php7.0 php7.0-curl composer nodejs ruby-dev git yarn -yq
+RUN apt-get install build-essential libgmp-dev unzip rsync php7.2 php7.2-cli php7.2-common php7.2-curl composer nodejs ruby-dev git yarn -yq
 
 # Set git configuration
 RUN git config --global user.name "Forge CI/CD Deployment"
